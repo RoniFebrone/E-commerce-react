@@ -1,0 +1,91 @@
+@use '../../sass/_variables.scss' as *;
+
+.login {
+    text-align: center;
+
+
+    &__form {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 4%;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35px;
+    }
+
+    h2 {
+        margin: 1.5% 0;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    label {
+        text-align: left;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    &__input-form {
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-width: 524px;
+        margin: 2%;
+        gap: 10px;
+        width: 27%;
+    }
+
+
+    //input com hover.
+    input {
+        height: 52px;
+        padding: 18px 13px;
+        border: 2px solid $border-input-color;
+        border-radius: 10px;
+        width: 100%;
+        transition: border-color 0.5s ease;
+
+
+        &:hover {
+            border-color: $contrast-color;
+        }
+    }
+
+
+    //button com hover.
+    button {
+        width: 524px;
+        margin-right: 10px;
+        border: none;
+        background-color: $contrast-color;
+        border-radius: 6px;
+        padding: 13px;
+        margin-top: 3%;
+        margin-bottom: 100px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 21px;
+        transition: transform 1s ease;
+
+        text-decoration: none;
+        color: $white;
+
+        
+
+
+        &:hover {
+            background-color: darken($contrast-color, 5%);
+            cursor: pointer;
+            transform: translateY(-5px);           
+        }
+    }
+
+
+}
